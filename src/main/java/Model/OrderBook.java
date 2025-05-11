@@ -48,4 +48,8 @@ public class OrderBook {
     public Map<String, OrderPlaced> getActiveOrders() {
         return Collections.unmodifiableMap(activeOrders);
     }
+
+    public Set<String> getCancelledOrders() {
+        return cancelledOrders;
+    }
 }

@@ -23,9 +23,7 @@ public class CommandHandler {
         OrderPlaced newOrder = new OrderPlaced(orderId, userId, isBuy, quantity, price);
         store.append(newOrder);
 
-        if (isBuy) {
-            store.append(new FundsDebited(userId, quantity * price));
-        }
+        orderBook.rebuildFromEvents(store.getAllEvents());
 
         List<OrderPlaced> opposingOrders = isBuy ?
                 orderBook.getSellOrdersSorted() :
@@ -51,10 +49,15 @@ public class CommandHandler {
                         quantity * existing.getPrice()
                 ));
 
+                if (isBuy) {
+                    store.append(new FundsDebited(userId, quantity * price));
+                }
+
                 break;
             }
         }
     }
+
 
     public void cancelOrder(String orderId, String userId) {
         store.append(new OrderCancelled(orderId, userId));
