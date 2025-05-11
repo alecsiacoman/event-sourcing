@@ -1,7 +1,6 @@
 package Management;
 
 import Event.BaseEvent;
-
 import java.util.ArrayList;
 import java.util.List;
 

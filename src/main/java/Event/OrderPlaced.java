@@ -1,13 +1,19 @@
 package Event;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.LocalDateTime;
 
 public class OrderPlaced extends BaseEvent {
-    private final String orderId;
-    private final String userId;
-    private final boolean isBuy;
-    private final double quantity;
-    private final double price;
+    private String orderId;
+    private String userId;
+    private boolean isBuy;
+    private double quantity;
+    private double price;
+
+    public OrderPlaced() {
+        super(LocalDateTime.now());
+    }
 
     public OrderPlaced(String orderId, String userId, boolean isBuy, double quantity, double price) {
         super(LocalDateTime.now());
