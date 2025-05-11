@@ -13,5 +13,9 @@ public class OrderCancelled extends BaseEvent{
     }
 
     public String getOrderId() { return orderId; }
-    public String getUserId() { return userId; }
+
+    @Override
+    public String toString() {
+        return String.format("FundsDebited{userId='%s', orderId=%s}", userId, orderId);
+    }
 }

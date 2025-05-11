@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb1cfe81-c77d-47c8-9799-278da089fd4e" name="Changes" comment="feat: implement system replayer">
+    <list default="true" id="eb1cfe81-c77d-47c8-9799-278da089fd4e" name="Changes" comment="refactor: remove unused imports, functionalities">
       <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Event/OrderPlaced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Event/OrderPlaced.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Management/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Management/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Management/EventStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Management/EventStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application" />
@@ -72,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746459259947</updated>
       <workItem from="1746459261001" duration="4664000" />
-      <workItem from="1746882362141" duration="5474000" />
+      <workItem from="1746882362141" duration="6392000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -122,7 +120,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746979504175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor: improve imports and unused functionalities">
+      <option name="closed" value="true" />
+      <created>1746979641429</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746979641429</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor: improve imports and unused functionalities">
+      <option name="closed" value="true" />
+      <created>1746979686364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746979686364</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor: remove unused imports, functionalities">
+      <option name="closed" value="true" />
+      <created>1746979809274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746979809274</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +168,8 @@
     <MESSAGE value="refactor code" />
     <MESSAGE value="feat: add command handler" />
     <MESSAGE value="feat: implement system replayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implement system replayer" />
+    <MESSAGE value="refactor: improve imports and unused functionalities" />
+    <MESSAGE value="refactor: remove unused imports, functionalities" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove unused imports, functionalities" />
   </component>
 </project>

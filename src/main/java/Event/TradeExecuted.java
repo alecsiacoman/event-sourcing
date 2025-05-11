@@ -22,8 +22,10 @@ public class TradeExecuted extends BaseEvent{
 
     public String getBuyOrderId() { return buyOrderId; }
     public String getSellOrderId() { return sellOrderId; }
-    public String getBuyerId() { return buyerId; }
-    public String getSellerId() { return sellerId; }
-    public double getQuantity() { return quantity; }
-    public double getPrice() { return price; }
+
+    @Override
+    public String toString() {
+        return String.format("TradeExecuted{buyOrderId='%s', sellOrderId='%s', buyerId='%s', sellerId='%s', quantity=%.2f, price=%.2f}",
+                buyOrderId, sellOrderId, buyerId, sellerId, quantity, price);
+    }
 }

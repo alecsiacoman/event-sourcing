@@ -3,15 +3,11 @@ package Event;
 import java.time.LocalDateTime;
 
 public class OrderPlaced extends BaseEvent {
-    private String orderId;
-    private String userId;
-    private boolean isBuy;
-    private double quantity;
-    private double price;
-
-    public OrderPlaced() {
-        super(LocalDateTime.now());
-    }
+    private final String orderId;
+    private final String userId;
+    private final boolean isBuy;
+    private final double quantity;
+    private final double price;
 
     public OrderPlaced(String orderId, String userId, boolean isBuy, double quantity, double price) {
         super(LocalDateTime.now());
@@ -27,4 +23,10 @@ public class OrderPlaced extends BaseEvent {
     public boolean isBuy() { return isBuy; }
     public double getQuantity() { return quantity; }
     public double getPrice() { return price; }
+
+    @Override
+    public String toString() {
+        return String.format("OrderPlaced{orderId='%s', userId='%s', isBuy=%b, quantity=%.2f, price=%.2f}",
+                orderId, userId, isBuy, quantity, price);
+    }
 }

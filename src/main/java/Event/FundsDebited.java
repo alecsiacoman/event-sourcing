@@ -14,4 +14,9 @@ public class FundsDebited extends BaseEvent{
 
     public String getUserId() { return userId; }
     public double getAmount() { return amount; }
+
+    @Override
+    public String toString() {
+        return String.format("FundsDebited{userId='%s', amount=%.2f}", userId, amount);
+    }
 }

@@ -29,6 +29,7 @@ public class Application {
 
         maybeOrderId.ifPresent(id -> handler.cancelOrder(id, "alexandra"));
 
+        handler.placeOrder("alecsia", true, 5, 100);
 
         systemReplayer.replayAll(account, orderBook);
 
