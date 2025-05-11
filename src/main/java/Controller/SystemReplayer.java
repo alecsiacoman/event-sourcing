@@ -1,4 +1,4 @@
-package Management;
+package Controller;
 
 import Event.BaseEvent;
 import Model.Account;

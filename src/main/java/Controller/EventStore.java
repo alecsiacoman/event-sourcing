@@ -1,4 +1,4 @@
-package Management;
+package Controller;
 
 import Event.BaseEvent;
 import java.util.ArrayList;
@@ -13,9 +13,5 @@ public class EventStore {
 
     public List<BaseEvent> getAllEvents() {
         return new ArrayList<>(events);
-    }
-
-    public void clear() {
-        events.clear();
     }
 }

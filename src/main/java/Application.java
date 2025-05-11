@@ -1,7 +1,7 @@
 import Event.OrderPlaced;
-import Management.CommandHandler;
-import Management.EventStore;
-import Management.SystemReplayer;
+import Controller.CommandHandler;
+import Controller.EventStore;
+import Controller.SystemReplayer;
 import Model.Account;
 import Model.OrderBook;
 
@@ -12,7 +12,7 @@ public class Application {
         EventStore store = new EventStore();
         OrderBook orderBook = new OrderBook();
         Account account = new Account();
-        CommandHandler handler = new CommandHandler(store, orderBook, account);
+        CommandHandler handler = new CommandHandler(store, orderBook);
         SystemReplayer systemReplayer = new SystemReplayer(store);
 
         handler.depositFunds("alecsia", 1000);

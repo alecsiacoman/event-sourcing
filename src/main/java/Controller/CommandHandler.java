@@ -1,7 +1,6 @@
-package Management;
+package Controller;
 
 import Event.*;
-import Model.Account;
 import Model.OrderBook;
 
 import java.util.List;
@@ -10,12 +9,10 @@ import java.util.UUID;
 public class CommandHandler {
     private final EventStore store;
     private final OrderBook orderBook;
-    private final Account account;
 
-    public CommandHandler(EventStore store, OrderBook orderBook, Account account) {
+    public CommandHandler(EventStore store, OrderBook orderBook) {
         this.store = store;
         this.orderBook = orderBook;
-        this.account = account;
     }
 
     public void placeOrder(String userId, boolean isBuy, double quantity, double price) {
@@ -66,9 +63,5 @@ public class CommandHandler {
 
     public void depositFunds(String userId, double amount) {
         store.append(new FundsCredited(userId, amount));
-    }
-
-    public void withdrawFunds(String userId, double amount) {
-        store.append(new FundsDebited(userId, amount));
     }
 }
